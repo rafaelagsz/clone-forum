@@ -41,14 +41,14 @@ const Comentar = ({postId, comments, autorId}) => {
                 </BotaoCondicional>
 
                 {mostrarComentarios && (
-                <ContainerCurtit>
+                <ContainerCurtir>
                     <div>
                         <InputComentar placeholder="comentario" 
                         value={novoComentario} 
                         onChange={(e)=> setNovoComentario(e.target.value)}/>
                     </div>
                     {novosComentarios}
-                </ContainerCurtit>
+                </ContainerCurtir>
                 )}
                 <Curtir autorId={autorId} />
             </ContainerItem>

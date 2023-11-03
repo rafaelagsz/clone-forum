@@ -16,7 +16,7 @@ function Card() {
   },[])
  
   return (
-    <>
+    <ContainerCardHome>
     {
       loading ?(
         <ContainerCard>
@@ -49,10 +49,8 @@ function Card() {
         </ContainerCard>
       ):(<p>Loading</p>)
     }
-   
 
-
-    </>
+    </ContainerCardHome>
   )
 }
 

@@ -33,7 +33,41 @@ const CriarPost = () => {
 
   return (
    <>
-   criarpost
+    <HeaderPerfil titulo={"New Question"} />
+    <ContainerCriarPost>
+      {/*<Menu/>*/}
+      <FormStyle onSubmit={criarPostApi}>
+          <InputStyle
+          placeholder="Título"
+          value={tittle}
+          onChange={(e)=> setTittle(e.target.value)}
+          required
+          />
+
+          <TextareaStyle
+          placeholder="Conteúdo"
+          value={content}
+          onChange={(e)=> setContent(e.target.value)}
+          required
+          />
+
+          <InputStyle
+          type="text"
+          placeholder="Hashtags"
+          value={hashtag}
+          onChange={(e)=> setHashtag(e.target.value)}
+          />
+
+          <InputStyle
+          type="text"
+          label="Imagem"
+          placeholder="Digite o endereço da imagem"
+          onChange={(e)=> setImage(e.target.value)}
+          />
+      <ButtonStyle type="submit">Enviar</ButtonStyle>
+      
+      </FormStyle>
+    </ContainerCriarPost>
    </>
   );
 };
